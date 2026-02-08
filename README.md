@@ -5,6 +5,13 @@ Hybrid Web + Desktop Application
 A hybrid application that visualizes and analyzes chemical equipment data from CSV files.
 The same Django backend powers both React (Web) and PyQt5 (Desktop) frontends.
 
+## Desktop Application
+
+Download the desktop application from GitHub Releases.
+
+Run `app.exe` to start the PyQt5 desktop app.
+
+
 🚀 Features
 
 📂 Upload CSV file containing chemical equipment data
