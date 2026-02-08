@@ -5,6 +5,10 @@ Hybrid Web + Desktop Application
 A hybrid application that visualizes and analyzes chemical equipment data from CSV files.
 The same Django backend powers both React (Web) and PyQt5 (Desktop) frontends.
 
+You can try it here
+https://chemical-equipment-visualizer4.netlify.app/
+(Wait if site operation is slow)
+
 ## Desktop Application
 
 Download the desktop application from GitHub Releases.
