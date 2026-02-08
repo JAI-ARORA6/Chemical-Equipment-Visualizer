@@ -12,6 +12,8 @@ import {
   ArcElement,
 } from "chart.js";
 import { Pie } from "react-chartjs-2";
+const API_BASE_URL =
+  "https://chemical-equipment-visualizer-4-rn0v.onrender.com";
 
 ChartJS.register(
   BarElement,
@@ -31,20 +33,18 @@ function Upload() {
 
   const fetchHistory = async () => {
   try {
-    const res = await axios.get(
-      "http://127.0.0.1:8000/api/history/",
-      {
-        auth: {
-          username: "jai",
-          password: "jai#24arora",
-        },
-      }
-    );
+    const res = await axios.get(`${API_BASE_URL}/api/history/`, {
+      auth: {
+        username: "jai",
+        password: "jai#24arora",
+      },
+    });
     setHistory(res.data);
   } catch (err) {
     console.error(err);
   }
 };
+
 
 const SummaryCard = ({ title, value }) => (
   <div style={{
@@ -69,7 +69,7 @@ const chartCard = {
 const downloadReport = async () => {
   try {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/download-report/",
+      `${API_BASE_URL}/api/download-report/`,
       {
         auth: {
           username: "jai",
@@ -92,6 +92,7 @@ const downloadReport = async () => {
 };
 
 
+
 const uploadFile = async () => {
   if (!file) return alert("Select a file");
 
@@ -100,7 +101,7 @@ const uploadFile = async () => {
 
   try {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/upload/",
+      `${API_BASE_URL}/api/upload/`,
       formData,
       {
         auth: {
@@ -117,6 +118,7 @@ const uploadFile = async () => {
     console.error(err);
   }
 };
+
 
 
 
