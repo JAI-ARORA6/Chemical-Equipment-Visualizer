@@ -131,10 +131,7 @@ REST_FRAMEWORK = {
 
 
 ALLOWED_HOSTS = [
-    "chemical-equipment-visualizer-4-rn0v.onrender.com",
-    ".onrender.com",
-    "localhost",
-    "127.0.0.1",
+    "*"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
