@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# React build
+frontend/build/
+
+# Env files
+.env
+.env.*
+
+# Python (if backend uses it)
+__pycache__/
+*.pyc
+venv/
+
+# CSV temp/generated files
+backend/csvs/sample_equipment_data_*.csv
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
