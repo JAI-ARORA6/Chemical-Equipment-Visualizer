@@ -4,5 +4,6 @@ django-cors-headers
 pandas
 numpy
 matplotlib
+reportlab
 gunicorn
 whitenoise
