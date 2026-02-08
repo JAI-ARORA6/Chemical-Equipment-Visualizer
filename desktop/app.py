@@ -13,11 +13,15 @@ from matplotlib.figure import Figure
 
 
 # ---------- CONFIG ----------
-API_UPLOAD_URL = "http://127.0.0.1:8000/api/upload/"
-API_HISTORY_URL = "http://127.0.0.1:8000/api/history/"
-API_PDF_URL = "http://127.0.0.1:8000/api/download-report/"
+BASE_URL = "https://chemical-equipment-visualizer-4-rn0v.onrender.com"
+
+API_UPLOAD_URL = f"{BASE_URL}/api/upload/"
+API_HISTORY_URL = f"{BASE_URL}/api/history/"
+API_PDF_URL = f"{BASE_URL}/api/download-report/"
+
 USERNAME = "jai"
 PASSWORD = "jai#24arora"
+
 
 
 class ResponsiveCanvas(FigureCanvas):
